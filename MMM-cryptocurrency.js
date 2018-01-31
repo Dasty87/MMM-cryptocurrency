@@ -12,7 +12,10 @@ Module.register('MMM-cryptocurrency', {
         significantDigits: 2,
         coloredLogos: false,
         fontSize: 'xx-large',
-        limit: '100'
+        limit: '100',
+	color_neutral: "#000",
+	color_positive: "#6f6",
+	color_negative: "#f66",
     },
 
     sparklineIds: {
