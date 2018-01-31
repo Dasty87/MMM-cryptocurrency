@@ -38,7 +38,7 @@ Module.register('MMM-cryptocurrency', {
         tron: 1958,
         qtum: 1684,
         omisego: 1808,
-        airswap: 2058,  
+        airswap: 2058,
         aelf: 2299,
         aeternity: 1700,
         aion: 2062,
@@ -427,12 +427,15 @@ Module.register('MMM-cryptocurrency', {
 
     colorizeChange: function(change) {
 
+	var colorneutral = this.config.color_neutral
+	var colorpositive = this.config.color_positive
+	var colornegative = this.config.color_negative
         if (change < 0) {
-            return 'Red'
+            return colornegative
         } else if (change > 0) {
-            return 'Green'
+            return colorpositive
         } else {
-            return 'White'
+            return colorneutral
         }
     },
 
